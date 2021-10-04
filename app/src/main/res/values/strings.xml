@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test beta</string>
+    <string name="accelometer">Accelometer</string>
+    <string name="gyroscope">GyroScope</string>
+    <string name="camera">Camera</string>
+    <string name="microphone">microphone</string>
+    <string name="navigation">navigation</string>
+    <string name="proximity">proximity</string>
+</resources>
