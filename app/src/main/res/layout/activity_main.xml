@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
     tools:context=".MainActivity">
 
     <Button
@@ -13,7 +14,9 @@
         android:layout_marginStart="61dp"
         android:layout_marginTop="164dp"
         android:layout_marginBottom="128dp"
+        android:background="#FFEB3B"
         android:text="@string/accelometer"
+        android:textColor="#BF360C"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +38,8 @@
         android:id="@+id/btn3"
         android:layout_width="159dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="212dp"
         android:paddingStart="16dp"
         android:paddingEnd="20dp"
         android:text="@string/camera"
@@ -62,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="216dp"
         android:layout_marginEnd="89dp"
         android:text="@string/microphone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,5 +87,34 @@
         app:layout_constraintStart_toEndOf="@+id/btn5"
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/accelerometerimage"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="118dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_motion_100"
+        android:contentDescription="@string/dgjh" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
