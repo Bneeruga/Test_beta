@@ -2,13 +2,17 @@
     <string name="app_name">Test beta</string>
     <string name="accelometer">Accelometer</string>
     <string name="gyroscope">GyroScope</string>
-    <string name="camera">Camera</string>
     <string name="microphone">microphone</string>
-    <string name="navigation">navigation</string>
     <string name="proximity">proximity</string>
     <string name="x_value">X Value</string>
     <string name="y_value">Y Value</string>
     <string name="z_value">Z value</string>
     <string name="todo">TODO</string>
     <string name="dgjh">TODO</string>
+    <string name="todo66776">TODO</string>
+    <string name="magnetic">magnetic</string>
+    <string name="gravity">gravity</string>
+    <string name="light">Light</string>
+    <string name="todo5455">TODO</string>
+    <string name="todo1234">TODO</string>
 </resources>
