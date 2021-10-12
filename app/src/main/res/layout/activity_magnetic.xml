@@ -4,51 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_image"
-    tools:context=".Accelo">
+    tools:context=".Magnetic">
 
     <TextView
-        android:id="@+id/xtextView"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
+        android:layout_marginStart="96dp"
         android:layout_marginTop="88dp"
-        android:layout_marginEnd="182dp"
+        android:layout_marginEnd="257dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/x_value"
-        android:textColor="#BBDEFB"
-        app:layout_constraintBottom_toTopOf="@+id/ytextView"
+        android:text="@string/textviewm1"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ytextView"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="183dp"
-        android:text="@string/y_value"
-        android:textColor="#BBDEFB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/xtextView" />
-
-    <TextView
-        android:id="@+id/ztextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="183dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginBottom="384dp"
-        android:text="@string/z_value"
-        android:textColor="#BBDEFB"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="520dp"
+        android:text="@string/textviewm2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/xtextView"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="418dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

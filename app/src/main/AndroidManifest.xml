@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestBeta">
         <activity
+            android:name=".proximity"
+            android:exported="true" />
+        <activity
+            android:name=".Magnetic"
+            android:exported="true" />
+        <activity
+            android:name=".gravity"
+            android:exported="true" />
+        <activity
+            android:name=".Light"
+            android:exported="true" />
+        <activity
             android:name=".gyro"
             android:exported="true" />
         <activity
