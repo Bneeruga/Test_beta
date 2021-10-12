@@ -8,27 +8,17 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
-        android:background="#97405D"
-        android:text="@string/accelometer"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
         android:id="@+id/btn2"
-        android:layout_width="125dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="44dp"
         android:text="@string/gyroscope"
+        android:textSize="12sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/btn3"
@@ -36,11 +26,9 @@
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="117dp"
         android:paddingStart="16dp"
         android:paddingEnd="20dp"
         android:text="@string/light"
-        app:layout_constraintEnd_toStartOf="@+id/btn4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -50,11 +38,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="112dp"
         android:text="@string/magnetic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -66,7 +50,6 @@
         android:layout_marginEnd="44dp"
         android:text="@string/gravity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
@@ -75,11 +58,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="44dp"
-        android:layout_marginBottom="112dp"
         android:text="@string/proximity"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn5"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
@@ -88,11 +68,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginBottom="20dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/btn1"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/accelerometerimage"
@@ -108,7 +84,6 @@
         android:contentDescription="@string/dgjh"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icons8_motion_100" />
 
@@ -120,8 +95,6 @@
         android:layout_marginEnd="44dp"
         android:contentDescription="@string/todo66776"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/motion_sensor__2_"
         tools:ignore="ImageContrastCheck" />
@@ -132,9 +105,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="300dp"
-        android:layout_marginEnd="107dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/magnetic_field" />
@@ -147,8 +118,6 @@
         android:layout_marginEnd="44dp"
         android:contentDescription="@string/todo5455"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/isaac_newton"
         tools:ignore="ImageContrastCheck" />
@@ -163,5 +132,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/icons8_light_64__1_" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/accelometer"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
