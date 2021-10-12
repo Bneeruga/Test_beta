@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class gravity extends AppCompatActivity implements SensorEventListener {
 
-    private TextView xvalue,yvalue,zvalue;
+    private TextView gravityvaluex,gravityvaluey,gravityvaluez;
     private SensorManager sensorManager;
     private Sensor gravity;
     private boolean isGravityAvailable;
@@ -20,37 +20,38 @@ public class gravity extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accelo);
+        setContentView(R.layout.activity_gravity);
 
-        xvalue = findViewById(R.id.textView7);
-        yvalue = findViewById(R.id.textView8);
-        zvalue = findViewById(R.id.textView3);
+        gravityvaluex = findViewById(R.id.textView3);
+        gravityvaluey = findViewById(R.id.textView4);
+        gravityvaluez = findViewById(R.id.textView7);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
-        if(sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY) != null){
-            gravity = sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
+        if(sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null){
+            gravity = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
             isGravityAvailable = true;
         }else{
-            xvalue.setText("Gravity not present");
-            yvalue.setText("Gravity not present");
-            zvalue.setText("Gravity not present");
+            gravityvaluex.setText("Gravity not present");
+            gravityvaluey.setText("Gravity not present");
+            gravityvaluez.setText("Gravity not present");
             isGravityAvailable = false;
         }
-    }
 
+    }
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        xvalue.setText(sensorEvent.values[0] + "m/s^2");
-        yvalue.setText(sensorEvent.values[1] + "m/s^2");
-        zvalue.setText(sensorEvent.values[2] + "m/s^2");
+        gravityvaluex.setText(sensorEvent.values[0] + "m/s^2");
+        gravityvaluey.setText(sensorEvent.values[1] + "m/s^2");
+        gravityvaluez.setText(sensorEvent.values[2] + "m/s^2");
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
     }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -66,6 +67,3 @@ public class gravity extends AppCompatActivity implements SensorEventListener {
             sensorManager.unregisterListener(this);
     }
 }
-
-
-
