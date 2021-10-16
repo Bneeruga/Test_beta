@@ -42,9 +42,9 @@ public class gravity extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        gravityvaluex.setText(sensorEvent.values[0] + "m/s^2");
-        gravityvaluey.setText(sensorEvent.values[1] + "m/s^2");
-        gravityvaluez.setText(sensorEvent.values[2] + "m/s^2");
+        gravityvaluex.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   m/s^2");
+        gravityvaluey.setText(Math.round(sensorEvent.values[1]* 1000)/1000.0 + "   m/s^2");
+        gravityvaluez.setText(Math.round(sensorEvent.values[2]* 1000)/1000.0 + "   m/s^2");
     }
 
     @Override

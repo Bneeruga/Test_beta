@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
     tools:context=".Magnetic">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="100dp"
         android:text="@string/textviewm1"
+        android:textColor="#BBDEFB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +25,7 @@
         android:layout_marginTop="21dp"
         android:layout_marginEnd="100dp"
         android:text="@string/textviewm2"
+        android:textColor="#BBDEFB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -33,6 +36,7 @@
         android:layout_marginTop="21dp"
         android:layout_marginEnd="100dp"
         android:text="@string/textview"
+        android:textColor="#BBDEFB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -43,6 +47,7 @@
         android:layout_marginStart="74dp"
         android:layout_marginTop="64dp"
         android:text="@string/x_axis"
+        android:textColor="#BBDEFB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,6 +58,7 @@
         android:layout_marginStart="74dp"
         android:layout_marginTop="21dp"
         android:text="@string/y_axis"
+        android:textColor="#BBDEFB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -63,6 +69,25 @@
         android:layout_marginStart="74dp"
         android:layout_marginTop="21dp"
         android:text="@string/z_axis"
+        android:textColor="#BBDEFB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="110dp"
+        android:paddingTop="10dp"
+        android:paddingRight="110dp"
+        android:paddingBottom="10dp"
+        android:text="@string/magnetic_field"
+        android:textAllCaps="true"
+        android:textColor="#176BAE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

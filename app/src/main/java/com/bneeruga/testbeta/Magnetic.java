@@ -59,9 +59,10 @@ public class Magnetic extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        magneticValuex.setText(sensorEvent.values[0] + "micro-Tesla (uT) ");
-        magneticValuey.setText(sensorEvent.values[1] + "micro-Tesla (uT) ");
-        magneticValuez.setText(sensorEvent.values[2] + "micro-Tesla (uT) ");
+
+        magneticValuex.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   micro-Tesla (uT) ");
+        magneticValuey.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0  + "  micro-Tesla (uT) ");
+        magneticValuez.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0  + "  micro-Tesla (uT) ");
     }
 
     @Override

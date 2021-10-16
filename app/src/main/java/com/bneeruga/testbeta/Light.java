@@ -8,6 +8,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Light extends AppCompatActivity implements SensorEventListener {
@@ -15,6 +16,7 @@ public class Light extends AppCompatActivity implements SensorEventListener {
     private TextView lightValue;
     private SensorManager sensorManager;
     private Sensor light;
+    private ImageView bulb;
     private boolean isLightAvailable;
 
     @Override
@@ -39,7 +41,14 @@ public class Light extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        lightValue.setText(sensorEvent.values[0] + "lux");
+        lightValue.setText(sensorEvent.values[0] + "   lux");
+        bulb = findViewById(R.id.bulbView);
+        if (sensorEvent.values[0] == 0){
+            bulb.setImageResource(R.drawable.oofbulb);
+        }else{
+            bulb = findViewById(R.id.bulbView);
+            bulb.setImageResource(R.drawable.onbulb);
+        }
     }
 
     @Override

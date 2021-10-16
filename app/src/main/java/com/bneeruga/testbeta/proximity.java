@@ -40,7 +40,7 @@ public class proximity extends AppCompatActivity implements SensorEventListener 
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        proximityValue.setText(sensorEvent.values[0] + "centimeters");
+        proximityValue.setText(sensorEvent.values[0] + "     cm");
     }
 
     @Override

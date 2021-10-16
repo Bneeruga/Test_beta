@@ -45,9 +45,10 @@ public class gyro extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        xvalue.setText(sensorEvent.values[0] + "rad/s");
-        yvalue.setText(sensorEvent.values[1] + "rad/s");
-        zvalue.setText(sensorEvent.values[2] + "rad/s");
+
+        xvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
+        yvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
+        zvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
     }
 
     @Override

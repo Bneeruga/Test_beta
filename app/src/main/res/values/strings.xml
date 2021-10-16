@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Test beta</string>
-    <string name="accelometer">Accelometer</string>
+    <string name="accelerometer">Accelerometer</string>
     <string name="gyroscope">GyroScope</string>
     <string name="microphone">microphone</string>
     <string name="proximity">proximity</string>
@@ -32,5 +32,8 @@
     <string name="z_axis">Z-axis</string>
     <string name="luminous_flux">luminous flux</string>
     <string name="centimeters">Centimeters</string>
+    <string name="magnetic_field">magnetic field</string>
+    <string name="proximity_scensor">proximity scensor</string>
+    <string name="todo55667">TODO</string>
 
 </resources>

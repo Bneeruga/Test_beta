@@ -41,9 +41,13 @@ public class Accelo extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        xvalue.setText(sensorEvent.values[0] + "m/s^2");
-        yvalue.setText(sensorEvent.values[1] + "m/s^2");
-        zvalue.setText(sensorEvent.values[2] + "m/s^2");
+
+
+
+
+        xvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   m/s^2");
+        yvalue.setText(Math.round(sensorEvent.values[1]* 1000)/1000.0 + "   m/s^2");
+        zvalue.setText(Math.round(sensorEvent.values[2]* 1000)/1000.0 + "   m/s^2");
     }
 
     @Override
