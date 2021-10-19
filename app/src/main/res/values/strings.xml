@@ -35,5 +35,9 @@
     <string name="magnetic_field">magnetic field</string>
     <string name="proximity_scensor">proximity scensor</string>
     <string name="todo55667">TODO</string>
+    <string name="todo234">TODO</string>
+    <string name="curr_accelation">curr accelation</string>
+    <string name="prev_accleration">Prev Accleration</string>
+    <string name="chnage_in_accelation">Chnage in accelation</string>
 
 </resources>

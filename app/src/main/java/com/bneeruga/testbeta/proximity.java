@@ -8,6 +8,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class proximity extends AppCompatActivity implements SensorEventListener {
@@ -16,6 +17,7 @@ public class proximity extends AppCompatActivity implements SensorEventListener 
     private TextView proximityValue;
     private SensorManager sensorManager;
     private Sensor proximity;
+    private ImageView pro;
     private boolean isProximityAvailable;
 
     @Override
@@ -41,6 +43,16 @@ public class proximity extends AppCompatActivity implements SensorEventListener 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         proximityValue.setText(sensorEvent.values[0] + "     cm");
+
+        pro = findViewById(R.id.proximityview);
+
+        if (sensorEvent.values[0] == 0){
+            pro.setImageResource(R.drawable.bad_review);
+        }else{
+
+            pro.setImageResource(R.drawable.good_review);
+        }
+
     }
 
     @Override

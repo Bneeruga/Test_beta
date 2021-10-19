@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_571856627684"
+    android:background="@drawable/bg_image"
     tools:context=".proximity">
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_marginStart="74dp"
         android:layout_marginTop="80dp"
         android:text="@string/centimeters"
-        android:textColor="#6D4C41"
+        android:textColor="#040303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
@@ -47,5 +47,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/proximityview"
+        android:layout_width="123dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="354dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:srcCompat="@drawable/good_review"
+        android:contentDescription="@string/todo234" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

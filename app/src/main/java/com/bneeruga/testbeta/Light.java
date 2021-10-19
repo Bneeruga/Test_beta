@@ -46,7 +46,6 @@ public class Light extends AppCompatActivity implements SensorEventListener {
         if (sensorEvent.values[0] == 0){
             bulb.setImageResource(R.drawable.oofbulb);
         }else{
-            bulb = findViewById(R.id.bulbView);
             bulb.setImageResource(R.drawable.onbulb);
         }
     }
