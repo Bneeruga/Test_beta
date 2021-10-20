@@ -39,5 +39,20 @@
     <string name="curr_accelation">curr accelation</string>
     <string name="prev_accleration">Prev Accleration</string>
     <string name="chnage_in_accelation">Chnage in accelation</string>
+    <string name="todo232">TODO</string>
+    <string name="todo5446">TODO</string>
+    <string name="title_activity_navigation_main">NavigationMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="bneeruga_buffalo_edu">bneeruga@buffalo.edu</string>
+    <string name="bharath_reddy_neeruganti">Bharath Reddy Neeruganti</string>
 
 </resources>

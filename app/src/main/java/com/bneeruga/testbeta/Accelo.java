@@ -79,9 +79,9 @@ public class Accelo extends AppCompatActivity implements SensorEventListener {
         curr = findViewById(R.id.currAcc);
         change = findViewById(R.id.changeAcc);
 
-        prev.setText("Prev :" + (int)accelerationPrevValue );
-        curr.setText("Curr :" + (int)accelerationCurrValue );
-        change.setText("Change :" + (int)changeInAcceleration );
+        prev.setText("Prev :  " + (int)accelerationPrevValue );
+        curr.setText("Curr :  " + (int)accelerationCurrValue );
+        change.setText("Change :  " + (int)changeInAcceleration );
         proBar = findViewById(R.id.progressBar);
         proBar.setProgress( (int) changeInAcceleration );
 
