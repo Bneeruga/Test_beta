@@ -10,13 +10,15 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
 public class gyro extends AppCompatActivity implements SensorEventListener {
 
-    private TextView xvalue,yvalue,zvalue;
+    private TextView xvalue,yvalue,zvalue, mobileState;
     private SensorManager sensorManager;
+    private ImageView mobileStateView;
     private Sensor gyroscope;
     private boolean isGyroscopeAvailable;
 
@@ -45,10 +47,23 @@ public class gyro extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-
+      mobileStateView = findViewById(R.id.imageView2);
+      mobileState = findViewById(R.id.textView23);
         xvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
-        yvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
-        zvalue.setText(Math.round(sensorEvent.values[0]* 1000)/1000.0 + "   rad/s");
+        yvalue.setText(Math.round(sensorEvent.values[1]* 1000)/1000.0 + "   rad/s");
+        zvalue.setText(Math.round(sensorEvent.values[2]* 1000)/1000.0 + "   rad/s");
+
+        if(sensorEvent.values[2] > 0.5f){
+            mobileStateView.setImageResource(R.drawable.anticlock);
+            mobileState.setText("rotated anti-clockwise");
+        }else if(sensorEvent.values[2] < -0.5f){
+            mobileStateView.setImageResource(R.drawable.clockwise);
+            mobileState.setText("Rotated clockwise");
+        }else if(sensorEvent.values[2] ==0 ){
+            mobileStateView.setImageResource(R.drawable.arrowup);
+            mobileState.setText("stable");
+        }
+
     }
 
     @Override

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestBeta">
         <activity
+            android:name=".References"
+            android:exported="true" />
+        <activity
             android:name=".gravity"
             android:exported="true" />
         <activity

@@ -1,11 +1,20 @@
 package com.bneeruga.testbeta;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
     private Button gravityButton;
     private Button magneticButton;
     private Button proximityButton;
+    private Button reference;
+    private DrawerLayout drawer;
+    private NavigationView navView;
+    private ActionBarDrawerToggle toggle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         gyroButton = findViewById(R.id.btn2);
         gyroButton.setOnClickListener(new View.OnClickListener() {
@@ -78,5 +93,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        reference = findViewById(R.id.button);
+        reference.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, References.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }

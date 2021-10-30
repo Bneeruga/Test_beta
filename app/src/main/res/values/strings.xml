@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Test beta</string>
-    <string name="accelerometer">Accelerometer</string>
+    <string name="app_name">SeNsR UB</string>
+    <string name="accelerometer">Accelero</string>
     <string name="gyroscope">GyroScope</string>
     <string name="microphone">microphone</string>
     <string name="proximity">proximity</string>
@@ -9,6 +9,8 @@
     <string name="z_value">Z value</string>
     <string name="todo">TODO</string>
     <string name="dgjh">TODO</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
     <string name="todo66776">TODO</string>
     <string name="magnetic">magnetic</string>
     <string name="gravity">gravity</string>
@@ -25,7 +27,6 @@
     <string name="textviewg2">TextView</string>
     <string name="textviewp1">TextView</string>
     <string name="textviewp2">TextView</string>
-    <string name="textview">TextView</string>
     <string name="textview3">TextView</string>
     <string name="y_axis">Y-axis</string>
     <string name="x_axis">X-axis</string>
@@ -41,18 +42,38 @@
     <string name="chnage_in_accelation">Chnage in accelation</string>
     <string name="todo232">TODO</string>
     <string name="todo5446">TODO</string>
-    <string name="title_activity_navigation_main">NavigationMainActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="bneeruga_buffalo_edu">bneeruga@buffalo.edu</string>
+    <string name="progress_bar">Progress Bar</string>
     <string name="bharath_reddy_neeruganti">Bharath Reddy Neeruganti</string>
+    <string name="accelerorometerhea">Accelerorometer</string>
+    <string name="graph">Graph</string>
+    <string name="references">References</string>
+    <string name="textview">TextView</string>
+    <string name="refrences">Refrences</string>
+    <string name="link1">
+        <a href= "https://developer.android.com/reference/android/hardware/SensorEvent">
+            1. https://developer.android.com/reference/android/hardware/SensorEvent</a>
+
+    </string>
+    <string name="link2">
+        <a href= "https://www.youtube.com/c/StevdzaSan/playlists">
+        2. https://www.youtube.com/c/StevdzaSan/playlists</a>
+
+    </string>
+    <string name="link3">
+        <a href= "https://www.youtube.com/channel/UCUSqKFDbRaaWQTaMN3r4Pbg">
+            3. https://www.youtube.com/channel/UCUSqKFDbRaaWQTaMN3r4Pbg</a>
+
+    </string>
+    <string name="link4">
+        <a href= "https://www.flaticon.com/premium-icon=search">
+            4. https://www.flaticon.com/premium-icon</a>
+
+    </string>
+    <string name="link5">
+        <a href= "https://www.youtube.com/watch?v=Dqg1A4hy-jI">
+            5. https://www.youtube.com/watch?v=Dqg1A4hy-jI</a>
+
+    </string>
+
 
 </resources>
